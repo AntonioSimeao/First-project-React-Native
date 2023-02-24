@@ -21,6 +21,7 @@ export function Home() {
     "Julia",
     "Alice",
     "Lidia",
+    "Ana",
   ];
 
   function handleParticipantAdd() {

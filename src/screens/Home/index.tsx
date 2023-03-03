@@ -39,12 +39,11 @@ export function Home() {
         style: "cancel",
       },
     ]);
-    console.log(`Você clicou em remover ${name}`);
   }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.eventName}>Nome do participante</Text>
+      <Text style={styles.eventName}>Evento</Text>
 
       <Text style={styles.eventDate}>Sexta, 19 de Feveireiro de 2023</Text>
       <View style={styles.form}>

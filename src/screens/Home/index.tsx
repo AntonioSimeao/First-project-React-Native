@@ -12,7 +12,7 @@ import { Participant } from "../../components/Participant";
 import { styles } from "./styles";
 
 export function Home() {
-  const [participants, setParticipants] = useState<String[]>([]);
+  const [participants, setParticipants] = useState<string[]>([]);
   const [participantName, setParticipantName] = useState("");
 
   function handleParticipantAdd() {
@@ -25,7 +25,7 @@ export function Home() {
     setParticipants((prevState) => [...prevState, participantName]);
     setParticipantName("");
   }
-  function handleParticipantRemove(name: string) {
+  function handleParticipantRemove(name: String) {
     Alert.alert("Remover", `Remover o participante ${name} ?`, [
       {
         text: "Sim",
@@ -41,7 +41,7 @@ export function Home() {
     ]);
     console.log(`Você clicou em remover ${name}`);
   }
-  
+
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>{participantName}</Text>
